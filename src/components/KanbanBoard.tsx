@@ -29,6 +29,8 @@ export const KanbanBoard = () => {
   const [activeCard, setActiveCard] = useState<ActiveCard | null>(null)
   const columnsId = useMemo(() => columns.map(col => col.id), [columns])
 
+  // Comment added for testing purposes ...
+
   const createNewColumn = () => {
     const columnToAdd = createColumn(columns.length + 1)
     console.log(columnToAdd)
