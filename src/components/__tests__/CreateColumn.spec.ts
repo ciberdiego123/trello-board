@@ -15,7 +15,7 @@ describe('create new column', () => {
       expect(column.title).toBe(expectedTitle)
       expect(typeof column.id).toBe('string')
       // This id is a UUID randomly generated using crypto. Its length is 36.
-      expect(column.id.toString().length).toBeLessThanOrEqual(36)
+      expect(column.id.toString().length).toBeLessThanOrEqual(1)
     }
   )
 })
